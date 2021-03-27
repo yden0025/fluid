@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+}
+.cate-layout {
+  position: relative;
+  height: 100%;
+  padding-top: 44px;
+}
+.cate-header {
+  position: absolute;
+}
+.cate-header form {
+  width: 100%;
+  height: 100%;
+  padding-top: 7px;
+}
+.cate-header form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.cate-main {
+  height: 100%;
+  background-color: skyblue;
+}
+.cate-main .m-left {
+  width: 90px;
+  height: 100%;
+  background-color: yellow;
+  float: left;
+  overflow: hidden;
+}
+.cate-main .m-left ul li a {
+  display: block;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+.cate-main .m-right {
+  height: 100%;
+  background-color: green;
+  overflow: hidden;
+  padding: 5px;
+}
+.cate-main .m-right .cate-banner {
+  width: 100%;
+}
+.cate-main .m-right h4 {
+  font-size: 24px;
+}
+.cate-main .m-right ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.cate-main .m-right ul li img {
+  width: 70%;
+}

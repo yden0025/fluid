@@ -1,0 +1,247 @@
+@jdc: #f23030;
+
+// 头部
+.jd-header {
+  position: fixed;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  height: 40px;
+  background-color: rgba(222, 24, 27, 0);
+  padding: 0 50px 0 75px;
+  z-index: 99;
+  // 输入框
+  form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    input {
+      width: 100%;
+      height: 30px;
+      border-radius: 15px;
+      padding-left: 40px;
+    }
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      background-position: -60px -110px;
+    }
+  }
+  .logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 56px;
+    height: 21px;
+    background-position: 0 -109px;
+  }
+  .login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 40px;
+    // background-color: green;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+  }
+}
+
+// banner
+.jd-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  ul {
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    li {
+      width: 10%;
+      float: left;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  ol {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    li {
+      float: left;
+      width: 8px;
+      height: 8px;
+      margin: 5px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+    }
+    li.current {
+      background-color: #fff;
+    }
+  }
+}
+
+// 导航
+.jd-nav {
+  ul {
+    li {
+      text-align: center;
+      float: left;
+      width: 20%;
+      margin-bottom: 20px;
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+
+// 京东快报
+.jd-news {
+  position: relative;
+  height: 30px;
+  background-color: #eee;
+  padding: 0 50px 0 75px;
+  .news-title {
+    width: 73px;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+  }
+  .more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .cut {
+    height: 30px;
+    overflow: hidden;
+    ul {
+      li {
+        padding-left: 20px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// 京东秒杀
+.jd-sk {
+  // 头部
+  .sk-title {
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    .logo {
+      width: 20px;
+      height: 21px;
+      background-position: -83px -110px;
+      margin-top: 4px;
+    }
+    .text {
+      color: @jdc;
+      margin: 0 10px;
+    }
+    .time {
+      margin-top: 6px;
+      span {
+        float: left;
+        width: 18px;
+        height: 18px;
+        background-color: #000;
+        margin: 0 3px;
+        color: #fff;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 18px;
+      }
+      span:nth-child(even) {
+        background-color: transparent;
+        width: 3px;
+        color: #000;
+        margin: 0;
+      }
+    }
+    .more {
+      color: #ccc;
+    }
+  }
+  // 主体
+  .sk-main {
+    height: 120px;
+    padding-top: 5px;
+    overflow: auto;
+    ul {
+      width: 880px;
+      li {
+        float: left;
+        width: 88px;
+        text-align: center;
+        border-right: 1px solid #ccc;
+      }
+      a {
+        img {
+          width: 70%;
+        }
+        p {
+          line-height: 16px;
+        }
+        p:nth-child(2) {
+          color: @jdc;
+          font-weight: 700;
+        }
+        p:nth-child(3) {
+          text-decoration: line-through;
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+// 主会场
+.jd-major {
+  a {
+    float: left;
+    width: 33.33%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// 商品模块
+.jd-product {
+  ul {
+    li {
+      a {
+        width: 50%;
+        float: left;
+        img {
+          width: 100%;
+        }
+      }
+      &:nth-child(1) {
+        a {
+          width: 33.3%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

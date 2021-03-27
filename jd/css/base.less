@@ -1,0 +1,147 @@
+/*样式重置*/
+body,
+div,
+ul,
+li,
+ol,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  /*去掉默认边距*/
+  margin: 0;
+  padding: 0;
+  /*内减模式*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*去除移动端点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft Yahei", "Courier New", Courier, monospace; /*后面全都是备胎*/
+  color: #333;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+input {
+  /*边框*/
+  border: none;
+  /*轮廓线*/
+  outline: none;
+  /*去除表单在移动端 阴影 3d效果*/
+  -webkit-appearance: none;
+}
+
+/*公共样式*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.jd-sprite {
+  background: url("../images/jd-sprites.png") no-repeat;
+  background-size: 200px 200px;
+}
+
+// 公共布局
+body {
+  background-color: #ccc;
+}
+
+.layout {
+  height: 1800px;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+// 头部
+.header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 44px;
+  background-image: linear-gradient(#eee, #aaa);
+  padding: 0 44px;
+  .back,
+  .menu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 44px;
+    height: 44px;
+    padding: 11px;
+    background-position: -21px 0;
+    background-origin: content-box;
+    background-clip: content-box;
+  }
+  .menu {
+    left: auto;
+    right: 0;
+    background-position: -60px 0;
+  }
+}

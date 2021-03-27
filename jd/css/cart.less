@@ -1,0 +1,174 @@
+// 头部
+.cart-header {
+  position: relative;
+  text-align: center;
+  line-height: 44px;
+  font-size: 22px;
+}
+
+// 安全
+.cart-safe {
+  height: 33px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  line-height: 33px;
+  p {
+    display: inline-block;
+    padding-left: 33px;
+    background: url("../images/safe_icon.png") no-repeat 7px 7px;
+    background-size: 18px 18px;
+  }
+}
+
+// 商品
+.cart-product {
+  margin-top: 10px;
+  .chk {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+    //   background-position: -180px -90px;
+    background-position: -180px -70px;
+  }
+  .p-title {
+    position: relative;
+    height: 34px;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    padding-left: 34px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #ccc;
+
+    .logo {
+      width: 20px;
+      height: 15px;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+    .free {
+      margin-right: 10px;
+    }
+  }
+  .p-main {
+    .item {
+      position: relative;
+      height: 100px;
+      border-bottom: 1px #ccc solid;
+      padding-left: 34px;
+      .content {
+        // background-color: pink;
+        height: 100px;
+        padding: 10px;
+        .detail {
+          height: 80px;
+          width: 80px;
+          float: left;
+        }
+        .info {
+          height: 100%;
+        //   background-color: #daa520;
+          overflow: hidden;
+          padding: 0 10px;
+          .text {
+            font-size: 14px;
+            line-height: 16px;
+            height: 32px;
+            overflow: hidden;
+          }
+          .option {
+            // border: 1px solid red;
+            margin-top: 15px;
+            .num > * {
+              float: left;
+              width: 36px;
+              height: 30px;
+              border: 1px solid #ccc;
+              text-align: center;
+              line-height: 28px;
+              color: #999;
+              cursor: pointer;
+            }
+            .num {
+              input {
+                border-left: none;
+                border-right: none;
+              }
+            }
+            .del {
+              width: 18px;
+              height: 22px;
+            //   background-color: red;
+              cursor: pointer;
+              .del-up {
+                float: left;
+                width: 18px;
+                height: 4px;
+                background: url("../images/delete_up.png") no-repeat;
+                background-size: 18px 4px;
+                transition: transform 0.5s;
+                transform-origin: right center;
+              }
+              .del-down {
+                float: left;
+                width: 18px;
+                height: 18px;
+                background: url("../images/delete_down.png") no-repeat;
+                background-size: 100% 100%;
+                margin-top: -2px;
+              }
+            }
+            .open {
+              .del-up {
+                transform: rotate(30deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 模态框
+.win-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  .del-box {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 80%;
+    // height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    p {
+      font-size: 20px;
+      line-height: 80px;
+      border-bottom: 1px solid #ccc;
+    }
+    .btn-box {
+      padding: 10px;
+      a {
+        width: 46%;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        line-height: 38px;
+      }
+      .btn-ok {
+        background-color: red;
+        color: #fff;
+      }
+    }
+  }
+}
